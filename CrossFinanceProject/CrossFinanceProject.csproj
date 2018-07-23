@@ -173,8 +173,13 @@
     <Compile Include="Migrations\201807231152194_InitialDatabase.Designer.cs">
       <DependentUpon>201807231152194_InitialDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807231206137_AddedPersonTable.cs" />
+    <Compile Include="Migrations\201807231206137_AddedPersonTable.Designer.cs">
+      <DependentUpon>201807231206137_AddedPersonTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -234,6 +239,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201807231152194_InitialDatabase.resx">
       <DependentUpon>201807231152194_InitialDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807231206137_AddedPersonTable.resx">
+      <DependentUpon>201807231206137_AddedPersonTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

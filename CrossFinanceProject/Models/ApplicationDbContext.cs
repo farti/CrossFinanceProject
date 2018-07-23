@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MySql.Data.Entity;
 using System.Data.Entity;
-using System.Linq;
-using System.Web;
-using MySql.Data.Entity;
 
 namespace CrossFinanceProject.Models
 {
@@ -15,19 +11,14 @@ namespace CrossFinanceProject.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Properties<string>().Configure(s=>s.HasMaxLength(200).HasColumnType("varchar"));
-        }
+            modelBuilder.Properties<string>().Configure(s => s.HasMaxLength(200).HasColumnType("varchar"));
 
+        }
 
         public ApplicationDbContext()
             : base("WebAppCon")
         {
 
-        }
-
-        public static ApplicationDbContext Create()
-        {
-            return new ApplicationDbContext();
         }
 
     }
